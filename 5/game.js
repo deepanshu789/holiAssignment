@@ -51,4 +51,18 @@
         resetButton.addEventListener('click', reset);
       }
 
+      function reset() 
+      {
+        count = 1;        
+        resetButton.parentNode.removeChild(resetButton);
+        guesses.textContent = '';
+        lastResult.textContent = '';
+        lowOrHi.textContent = '';
+        guessField.disabled = false;
+         guessSubmit.disabled = false;
+        guessField.value = '';
+        lastResult.style.backgroundColor = 'white';
+        randomNumber = Math.floor(Math.random() * 100) + 1;
+      }
+
  </script>
