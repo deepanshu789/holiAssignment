@@ -38,5 +38,16 @@
         guessField.value = '';
       }
 
-      
+      guessSubmit.addEventListener('click', guess);
+
+
+      function gameOver()
+      {
+        guessField.disabled = true;
+        guessSubmit.disabled = true;
+        resetButton = document.createElement('button');
+        resetButton.textContent = 'Start new game';
+        document.body.appendChild(resetButton);
+        resetButton.addEventListener('click', reset);
+      }
  </script>
