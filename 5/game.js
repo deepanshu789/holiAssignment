@@ -41,7 +41,7 @@
       guessSubmit.addEventListener('click', guess);
 
 
-      function gameOver()
+     function gameOver()
       {
         guessField.disabled = true;
         guessSubmit.disabled = true;
@@ -50,4 +50,5 @@
         document.body.appendChild(resetButton);
         resetButton.addEventListener('click', reset);
       }
+
  </script>
